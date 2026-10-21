@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes en HTML</title>
+</head>
+
+<body style="font-family: Arial; background-color: #eaf4f4; margin: 30px;">
+
+    <h1 style="color: #15324b; text-align: center;">
+        Imágenes en HTML
+    </h1>
+
+    <hr>
+
+    <h2>¿Cómo insertar una imagen?</h2>
+
+    <p>
+        La etiqueta &lt;img&gt; permite mostrar imágenes
+        dentro de una página web. No necesita etiqueta de cierre.
+    </p>
+
+    <h2>Atributos principales</h2>
+
+    <ul>
+        <li><b>src:</b> indica la dirección o ubicación de la imagen.</li>
+        <li><b>alt:</b> proporciona una descripción de la imagen.</li>
+        <li><b>width:</b> establece el ancho.</li>
+        <li><b>height:</b> establece la altura.</li>
+    </ul>
+
+    <h2>Ejemplo de código</h2>
+
+    <p>Este es un ejemplo de cómo insertar una imagen:</p>
+
+    <pre style="background-color: white; padding: 15px; border: 1px solid #aaa;">
+&lt;img src="imagenes/flor.svg"
+     alt="Dibujo de una flor"
+     width="300"&gt;
+    </pre>
+
+    <h2>Ejemplo visual</h2>
+
+    <p>
+        Esta imagen es un dibujo de una flor creado con SVG:
+    </p>
+
+    <svg width="250" height="220" viewBox="0 0 250 220"
+         role="img" aria-label="Dibujo de una flor">
+
+        <rect width="250" height="220" rx="15" fill="#ffffff"/>
+
+        <path d="M125 115 L125 190"
+              stroke="#388e3c" stroke-width="8"
+              stroke-linecap="round"/>
+
+        <ellipse cx="105" cy="160" rx="22" ry="10"
+                 fill="#66bb6a" transform="rotate(25 105 160)"/>
+
+        <ellipse cx="145" cy="145" rx="22" ry="10"
+                 fill="#66bb6a" transform="rotate(-25 145 145)"/>
+
+        <g fill="#f48fb1">
+            <ellipse cx="125" cy="65" rx="20" ry="30"/>
+            <ellipse cx="125" cy="105" rx="20" ry="30"/>
+            <ellipse cx="105" cy="85" rx="30" ry="20"/>
+            <ellipse cx="145" cy="85" rx="30" ry="20"/>
+            <ellipse cx="110" cy="70" rx="20" ry="25"
+                     transform="rotate(-45 110 70)"/>
+            <ellipse cx="140" cy="70" rx="20" ry="25"
+                     transform="rotate(45 140 70)"/>
+        </g>
+
+        <circle cx="125" cy="85" r="20" fill="#ffca28"/>
+    </svg>
+
+    <h2>¿Por qué utilizar el atributo alt?</h2>
+
+    <p>
+        El atributo alt describe la imagen cuando no se puede cargar
+        y ayuda a las personas que utilizan lectores de pantalla.
+    </p>
+
+    <h2>Conclusión</h2>
+
+    <p>
+        Las imágenes hacen que las páginas web sean más atractivas
+        y permiten comunicar información de forma visual.
+    </p>
+
+    <hr>
+
+    <p style="text-align: center;">
+        <a href="index.html">Volver al inicio</a>
+    </p>
+
+</body>
+</html>
